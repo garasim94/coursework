@@ -1,6 +1,11 @@
 <html>
 
 <body>
-<div>{{some}}</div>
+    <div>Список сообщений</div>
+        {{#messages}}
+            <b>{{id}}</b>
+            <span>{{text}}</span>
+            <i>{{tag}}</i>
+        {{/messages}}
 </body>
 </html>
