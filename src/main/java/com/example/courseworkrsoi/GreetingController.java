@@ -46,7 +46,6 @@ public class GreetingController {
             messages = messageRepo.findAll();
         }
         model.put("messages", messages);
-
         return "main";
     }
 }
