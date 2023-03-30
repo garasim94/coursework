@@ -20,6 +20,7 @@ public class GreetingController {
                            String name, Map<String,Object> model){
         model.put("name",name);
         return "greeting";
+
     }
     @GetMapping("/main")
     public String main(Map<String,Object> model){
