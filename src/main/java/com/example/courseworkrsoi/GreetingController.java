@@ -30,7 +30,6 @@ public class GreetingController {
     public String add(@RequestParam String text, @RequestParam String tag, Map<String, Object> model) {
         Message message= new Message(text,tag);
         messageRepo.save(message);
-        //Iterable<Message> messages;
         Iterable<Message> messages = messageRepo.findAll();
         model.put("messages", messages);
 
